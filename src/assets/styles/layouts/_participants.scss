@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.member {
+  box-sizing: border-box;
+  display: flex;
+  flex: 1 0 30%;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid $blancoPrimario;
+  border-radius: 5px;
+}
+
+.member h2 {
+  margin-top: 0;
+}
+
+.member-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10%;
+}
+
+@container (min-width: 768px) {
+  .member {
+    flex: 1 0 30%;
+  }
+}

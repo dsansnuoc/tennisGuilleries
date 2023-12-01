@@ -1,0 +1,85 @@
+.dsn-title {
+  font-family: $font-family-serif;
+  font-size: responsive-font-size(12px, 24px, 320, 768);
+  font-weight: 700;
+  color: $uoc-corporate;
+
+  @media (min-width: $mqMinWidth) {
+    font-size: 48px;
+  }
+}
+
+.dsn-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  color: $blancoPrimario;
+  background-color: $azulPrimario;
+}
+
+.dsn-logo {
+  height: 40px;
+}
+
+.dsn-container {
+  max-width: 800px;
+  padding: 2rem;
+  margin: auto;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.dsn-menu ul {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.dsn-menu li {
+  margin: 0 10px;
+}
+
+.dsn-menu a {
+  color: $blancoPrimario;
+  text-decoration: none;
+  :hover {
+    text-decoration: underline;
+  }
+}
+
+.dsn-icono-menu {
+  display: block;
+  cursor: pointer;
+}
+
+@media (min-width: $mqMinWidth) {
+  .dsn-menu ul {
+    display: flex;
+  }
+  .dsn-icono-menu {
+    display: none;
+  }
+}
+
+.dsn-table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+}
+
+.dsn-th,
+.dsn-td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.dsn-th {
+  background-color: #f2f2f2;
+}

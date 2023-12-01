@@ -1,0 +1,14 @@
+@import "../variables";
+
+@function responsive-font-size(
+  $min-font-size,
+  $max-font-size,
+  $min-screen-width,
+  $max-screen-width
+) {
+  $vw-min: $min-screen-width / 16; // Convertir píxeles a vw
+  $vw-max: $max-screen-width / 16; // Convertir píxeles a vw
+  $font-size: $min-font-size + ($max-font-size - $min-font-size) *
+    (100vw - $vw-min) / ($vw-max - $vw-min);
+  @return $font-size;
+}

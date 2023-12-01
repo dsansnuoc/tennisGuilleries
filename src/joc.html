@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/styles/main.scss"
+        />
+        <title>Joc del Tenis</title>
+    </head>
+    <body>
+        <header class="dsn-header">
+            <div class="dsn-icono-menu"><i class="fa-solid fa-bars"></i></div>
+            <a href="#">
+                <img
+                    class="dsn-logo"
+                    src="./assets/images/istockphoto.jpg"
+                    alt="Logo"
+                />
+            </a>
+            <nav class="dsn-menu">
+                <ul>
+                    <li>
+                        <a href="index.html"
+                            ><span class="fa-solid fa-house"></span>Inici</a
+                        >
+                    </li>
+                    <li><a href="article.html">Article</a></li>
+                    <li><a href="participants.html">Paticipants</a></li>
+                    <li><a href="#">Joc</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <canvas id="tennisCanvas" width="1600" height="800"></canvas>
+
+        <include src="./views/footer.html"></include>
+        <script type="module" src="./assets/scripts/main.js"></script>
+        <script type="module" src="./assets/scripts/jocs.js"></script>
+    </body>
+</html>
